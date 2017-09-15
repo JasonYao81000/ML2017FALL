@@ -13,8 +13,8 @@ width, height = originalImage.size
 # New image with the same size and 'RBG' format.
 outputImage = Image.new('RGB', originalImage.size)
 
-for i in range(0, width - 1):
-    for j in range(0, height - 1):
+for i in range(0, width):
+    for j in range(0, height):
         # Get RGB for each pixel.
         r, g, b = originalImage.getpixel((i, j))
         # Put (RGB) // 2 for each pixel.
