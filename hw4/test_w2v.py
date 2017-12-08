@@ -1,4 +1,5 @@
 # #!/bin/bash
+# bash hw4_test.sh ./testing_data.txt ./prediction.csv
 # python3 test_w2v.py ./testing_data.txt ./prediction.csv
 # python3 train_w2v.py ./training_label.txt ./training_semi_label_0.93_18.txt
 
