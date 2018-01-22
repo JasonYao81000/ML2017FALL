@@ -1,6 +1,4 @@
-若助教想要節省測試我們的code的時間，或是要完整reproduce Kaggle上的結果 (public score: 0.53952)，
-請助教先幫我們準備好「testing_data.csv」這個檔案，並執行test.py，
-command如下：
+若助教想要節省測試我們的code的時間，或是要完整reproduce Kaggle上的結果 (public score: 0.53952)，請助教先幫我們準備好「testing_data.csv」這個檔案，並執行test.py，command如下：
 python3 test.py ./testing_data.csv ./prediction.csv ./w2vModel_64_w24_mc3_iter300.bin
 
 而以下是從training到testing所需的所有流程。
@@ -10,13 +8,10 @@ python3 splitWordTrain.py
 python3 train_w2v.py ./trainSeg.txt ./w2vModel_64_w24_mc3_iter300.bin
 python3 test.py ./testing_data.csv ./prediction.csv ./w2vModel_64_w24_mc3_iter300.bin
 
-其中，splitWordTrain.py，會將「1_train.txt、2_train.txt、3_train.txt、4_train.txt、5_train.txt」這五個檔案利用jieba，
-配合jieba_dict/dict.txt+dict.txt.big.TW這個詞典來切詞，並將切完的詞依行寫入trainSeg.txt。
+其中，splitWordTrain.py，會將「1_train.txt、2_train.txt、3_train.txt、4_train.txt、5_train.txt」這五個檔案利用jieba，配合jieba_dict/dict.txt+dict.txt.big.TW這個詞典來切詞，並將切完的詞依行寫入trainSeg.txt。
 
-再來，train_w2v.py，會將剛剛切詞後的句子(trainSeg.txt)全部讀進來利用gensim來train word2vec，最後產出word2vec，
-並儲存在當前資料夾，命名為w2vModel_64_w24_mc3_iter300.bin。
+再來，train_w2v.py，會將剛剛切詞後的句子(trainSeg.txt)全部讀進來利用gensim來train word2vec，最後產出word2vec，並儲存在當前資料夾，命名為w2vModel_64_w24_mc3_iter300.bin。
 
-最後，test.py會讀取testing data (testing_data.csv)，利用word2vec model (w2vModel_64_w24_mc3_iter300.bin)，
-產出要上傳至Kaggle的csv (prediction.csv)。
+最後，test.py會讀取testing data (testing_data.csv)，利用word2vec model (w2vModel_64_w24_mc3_iter300.bin)，產出要上傳至Kaggle的csv (prediction.csv)。
 
 以上就是我們Final整體的流程，再麻煩助教測試了，謝謝！
