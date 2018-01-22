@@ -10,7 +10,7 @@ python3 test.py ./testing_data.csv ./prediction.csv ./w2vModel_64_w24_mc3_iter30
 
 其中，splitWordTrain.py，會將「1_train.txt、2_train.txt、3_train.txt、4_train.txt、5_train.txt」這五個檔案利用jieba，配合jieba_dict/dict.txt+dict.txt.big.TW這個詞典來切詞，並將切完的詞依行寫入trainSeg.txt。
 
-再來，train_w2v.py，會將剛剛切詞後的句子(trainSeg.txt)全部讀進來利用gensim來train word2vec，最後產出word2vec，並儲存在當前資料夾，命名為w2vModel_64_w24_mc3_iter300.bin。
+再來，train_w2v.py，會將剛剛切詞後的句子(trainSeg.txt)全部讀進來利用gensim來train word2vec，最後產出word2vec model，並儲存在當前資料夾，命名為w2vModel_64_w24_mc3_iter300.bin。
 
 最後，test.py會讀取testing data (testing_data.csv)，利用word2vec model (w2vModel_64_w24_mc3_iter300.bin)，產出要上傳至Kaggle的csv (prediction.csv)。
 
