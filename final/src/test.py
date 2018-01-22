@@ -1,4 +1,4 @@
-# python3 test.py ./testing_data.csv ./prediction.csv ./w2vModel_256_w16_mc3.bin
+# python3 test.py ./testing_data.csv ./prediction.csv ./w2vModel_64_w24_mc3_iter300.bin
 
 import sys
 import numpy as np
@@ -9,7 +9,7 @@ from gensim.models import Word2Vec
 from scipy import spatial
 
 # Parameters of text classification.
-EMBEDDING_DIM = 256
+EMBEDDING_DIM = 64
 
 if __name__ == "__main__":
     # Fix random seed for reproducibility.
