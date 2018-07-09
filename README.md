@@ -2,6 +2,7 @@
 [Course Website](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML17_2.html)
 
 # HW0 - Basic Operations
+  * [Homework Website](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017_2/Lecture/HW0.pdf)
   * Q1 出現字數統計
   * Q2 圖片淡化
 
@@ -58,3 +59,12 @@
   * Public Score: 1.0000
   * Private Rank: 70
   * Private Score: 1.0000
+
+# Final - Conversations in TV Shows
+  * [Homework Website](https://docs.google.com/presentation/d/1XBuGnr-QO0CRoxUaN1d7i8iwDu_3WTTtIOJW8Q2N1EU/edit)
+  * [Kaggle](https://www.kaggle.com/c/ml-2017fall-final-tv-conversation)
+  * Rank: Top 6% (5/92)
+  * Public Rank: 2
+  * Public Score: 0.55810
+  * Private Rank: 5
+  * Private Score: 0.54466
